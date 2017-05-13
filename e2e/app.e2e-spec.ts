@@ -1,10 +1,10 @@
-import { DefaultPage } from './app.po';
+import { V4.1Page } from './app.po';
 
-describe('default App', () => {
-  let page: DefaultPage;
+describe('v4.1 App', () => {
+  let page: V4.1Page;
 
   beforeEach(() => {
-    page = new DefaultPage();
+    page = new V4.1Page();
   });
 
   it('should display message saying app works', () => {
