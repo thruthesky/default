@@ -1,7 +1,13 @@
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 
-platforms
-plugins
+
+# cordova
+/platforms/
+/plugins/
+/www/*.js
+/www/*.map
+/www/assets/
+
 
 # compiled output
 /dist
