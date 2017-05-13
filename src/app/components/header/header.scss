@@ -79,11 +79,11 @@ nav.navbar {
 /// Modules ////////////
 
 
-.user-icon {
+/deep/ .user-icon {
     height: auto;
     @media ( min-width: $md ) { height: 0; }
     vertical-align: top;
-    img {
-        top: -2px;
+    .fa-stack {
+        top: -3px;
     }
 }
