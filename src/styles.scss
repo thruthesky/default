@@ -9,35 +9,39 @@ $xl: 1200px;
 
 $gutter: 8px;
 $page-width: $lg;
-$header-height: 80px;
+$header-height: 68px;
 /* BASE */
 
-
-// $gutter: 8px;
-// $page-width: 1140px;
-
-// $header-height: 68px;
-
+@mixin page-width() {
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0;
+    width: 100%;
+    @media ( min-width: $lg ) {
+        margin: 0 auto;
+        width: $lg;
+        .navbar-brand {
+            padding-left: 0;
+        }
+    }
+}
 body {
-    margin-top: $header-height + $gutter!important;
+    margin-top: $header-height;
 }
-
-// nav.navbar {
-//     height: $header-height;
-// }
-
-ng-component {
-    display: block;
-    margin: 0 auto;
-    padding: 0 $gutter;
-    max-width: $page-width;
-    @media all and (min-width: $page-width) {
-        padding: 0;
-    }
-    .title {
-        font-size: 3em;
+.navbar .container {
+    @include page-width();
+    @media ( max-width: $md ) {
+        .navbar-collapse {
+            background-color: lightslategrey;
+        }
     }
 }
+.page-content {
+    @include page-width();
+    padding-top: $gutter;
+}
+
+
 
 
 #custom-error-handler {

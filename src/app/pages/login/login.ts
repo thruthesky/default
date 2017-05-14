@@ -5,6 +5,7 @@ import * as firebase from 'firebase/app';
 import { App } from './../../services/app';
 
 @Component({
+    selector: 'login-page',
     templateUrl: 'login.html'
 })
 
