@@ -23,7 +23,7 @@ import { AppComponent } from './app.component';
 
 import { HeaderComponent } from './components/header/header';
 import { UserIconComponent } from './components/user-icon/user-icon';
-
+//import { IconComponent } from './components/icon/icon';
 
 // page components.
 import { HomePage } from './pages/home/home';
@@ -38,6 +38,9 @@ import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { AngularFireAuthModule } from 'angularfire2/auth';
 import { environment } from '../environments/environment';
+
+
+import { BootFontModule } from 'bootfont';
 
 
 const appRoutes: Routes = [
@@ -67,7 +70,8 @@ const appRoutes: Routes = [
     RouterModule.forRoot( appRoutes ),
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireDatabaseModule,
-    AngularFireAuthModule
+    AngularFireAuthModule,
+    BootFontModule
   ],
   providers: [
     App,

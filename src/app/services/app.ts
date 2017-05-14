@@ -39,7 +39,7 @@ export class App {
                     this.user.displayName = profile.displayName;
                     this.user.email = profile.email;
                     this.user.photoURL = profile.photoURL;
-                    console.log("user logged in: ", this.user);
+                    // console.log("user logged in: ", this.user);
                 });
 
             } else {

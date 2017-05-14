@@ -4,6 +4,7 @@ import { App } from './../../services/app';
 
 
 @Component({
+    selector: 'home-page',
     templateUrl: 'home.html'
 })
 
