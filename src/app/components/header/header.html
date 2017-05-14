@@ -1,15 +1,15 @@
 <b-header break="sm">
   <div class="container">
     <b-icon class="navbar-toggler navbar-toggler-right" name="bars"></b-icon>
-    <b-icon class="navbar-brand" name="home"></b-icon>
+    <b-icon class="navbar-brand" name="home" routerLink="/"></b-icon>
     <div class="collapse navbar-collapse">
         <ul class="navbar-nav mr-auto">
-            <li class="nav-item navbar-text ml-3">Home</li>
-            <li class="nav-item navbar-text ml-3">Blogs</li>
+            <li class="nav-item navbar-text ml-3" routerLink="/">Home</li>
+            <li class="nav-item navbar-text ml-3" routerLink="/blogs">Blogs</li>
         </ul>
         <ul class="navbar-nav">
-            <li class="nav-item navbar-text ml-3">Login</li>
-            <li class="nav-item navbar-text ml-3 mr-4 mr-lg-0">Register</li>
+            <li class="nav-item navbar-text ml-3" routerLink="/login">Login</li>
+            <li class="nav-item navbar-text ml-3 mr-4 mr-lg-0" routerLink="/register">Register</li>
         </ul>
     </div>
   </div>
